@@ -345,6 +345,7 @@ section {
     body {
         width: 100vw;
         /* background-attachment: fixed; */
+        position: fixed;
         background-position: center;
         background-size: cover;
         height: 100%;
