@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #FFF;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+}
+
+section {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+/* Seção HEADER */
+.header {
+    background-color: #386F3F;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .logo img {
+    width: 5rem;
+    border-radius: 10px;
+}
+
+.header .logo h1 {
+    text-shadow: 3px 3px 10px black;
+    font-size: 1.3rem;
+}
+
+.header .navbar a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow: 3px 3px 10px black;
+    transition: .2s ease;
+    padding: 15px 10px;
+}
+
+.header .navbar a.active {
+    border-bottom: 2px solid #35dd5c;
+}
+
+.header .navbar a:hover {
+    padding: 15px 10px;
+    background-color: #28A745;
+    border-radius: 10px;
+}
+/* Oculta o botão do menu por padrão em telas grandes */
+.menu-toggle {
+    display: none;
+}
+/* Sobre nós início */
+.sobre-nos {
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+}
+
+.sobre-nos h2 {
+    color: #2b542c;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1rem;
+
+}
+
+.sobre-milena,
+.sobre-cristiano,
+.sobre-leandro,
+.sobre-cleisson,
+.sobre-professor {
+    display: flex;
+    padding: 20px;
+    gap: 1rem;
+    background-color: #386F3F;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.sobre-milena p,
+.sobre-cristiano p,
+.sobre-leandro p,
+.sobre-cleisson p,
+.sobre-professor p {
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.sobre-milena h2,
+.sobre-cristiano h2,
+.sobre-leandro h2,
+.sobre-cleisson h2,
+.sobre-professor h2 {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 2px 2px 2px rgb(46, 46, 46);
+}
+
+.sobre-milena img,
+.sobre-cristiano img,
+.sobre-leandro img,
+.sobre-cleisson img {
+    width: 12rem;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.sobre-professor img {
+    width: 20rem;
+    border-radius: 10px;
+}
+
+/* REPONSIVIDADE PARA MOBILE */
+@media screen and (min-width:320px) and (max-width:767px) {
+    body {
+        height: 100%;
+        padding: 0 .5rem;
+    }
+
+    .header .logo {
+        gap: .3rem;
+    }
+
+    .header .logo img {
+        width: 3rem;
+        margin-left: .2rem;
+    }
+
+    .header .logo h1 {
+        text-shadow: 3px 3px 10px black;
+        font-size: .9rem;
+    }
+    /* Oculta o menu de navegação padrão em telas pequenas */
+    .header .navbar {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Exibe o botão do menu apenas em telas pequenas */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+    /* Estilos para o menu quando estiver ativo */
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #386F3F;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar.active a {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block;
+    }
+
+    .sobre-nos h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    }
+
+    .sobre-milena,
+    .sobre-cristiano,
+    .sobre-leandro,
+    .sobre-cleisson,
+    .sobre-professor {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-milena p,
+    .sobre-cristiano p,
+    .sobre-leandro p,
+    .sobre-cleisson p,
+    .sobre-professor p {
+        font-size: 1rem;
+    }
+
+    .sobre-milena img,
+    .sobre-cristiano img,
+    .sobre-leandro img,
+    .sobre-cleisson img {
+        width: 10rem;
+        margin: 0 auto;
+    }
+
+    .sobre-professor img {
+        width: 10rem;
+        margin: 0 auto;
+    }
+}
+
+/* RESPONSIVIDADE TABLET */
+@media screen and (min-width:768px) and (max-width:1024px){
+    .container {
+        margin: 0 .5rem;
+    }
+    /* Oculta o menu de navegação padrão em telas pequenas */
+    .header .navbar {
+        display: none;
+    }
+    /* Exibe o botão do menu apenas em telas pequenas */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+    /* Estilos para o menu quando estiver ativo */
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #386F3F;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar.active a {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block;
+    }
+}
