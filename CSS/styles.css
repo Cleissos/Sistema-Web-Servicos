@@ -346,9 +346,9 @@ section {
         width: 100%;
         background-attachment: fixed;
         min-height: 100vh;
-        background-position: center;
+        /* background-position: center;
         background-size: cover;
-        overflow: hidden;
+        overflow: hidden; */
     }
 
     .header {
