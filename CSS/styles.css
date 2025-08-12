@@ -8,7 +8,7 @@
 }
 
 body {
-    min-width: 100%;
+    width: 100%;
     /* Aumente a altura mínima para 100% da viewport height */
     min-height: 100vh;
     background-position: center;
@@ -16,6 +16,7 @@ body {
     background-image: url("/IMG/up_ag_9913_oeiras3.jpg");
     display: flex;
     flex-direction: column;
+    background-attachment: fixed;
 }
 
 section {
@@ -343,11 +344,11 @@ section {
 /* RESPONSIVIDADE MOBILE */
 @media screen and (min-width: 320px) and (max-width: 767px) {
     body {
-        width: 100%;
-        background-attachment: fixed;
-        min-height: 100vh;
+        /* width: 100%; */
+        
         /* background-position: center;
         background-size: cover;
+        height: 100%;
         overflow: hidden; */
     }
 
