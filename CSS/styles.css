@@ -342,8 +342,8 @@ section {
 }
 /* RESPONSIVIDADE MOBILE */
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    html,body {
-        width: 100%;
+    body {
+        width: 100vw;
         /* background-attachment: fixed; */
         background-position: center;
         background-size: cover;
