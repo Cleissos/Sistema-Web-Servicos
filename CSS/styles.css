@@ -402,11 +402,9 @@ section {
 
     .inicio {
         /* Define o contêiner principal para centralizar e ocupar o espaço */
-        display: flex;
-        justify-content: center;
+        /* display: flex; */
         /* Centraliza o carrossel horizontalmente */
         flex-grow: 1;
-        align-items: center;
         /* background-attachment: fixed; */
         border: 2px  solid red;
     }
@@ -440,7 +438,6 @@ section {
         height: 10rem;
         border-radius: 10px;
         box-shadow: 5px 5px 5px #1f1f1f;
-        margin: auto 0;
     }
 
     .navigation-auto {
