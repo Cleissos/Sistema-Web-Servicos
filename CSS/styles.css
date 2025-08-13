@@ -404,6 +404,7 @@ section {
         /* Define o contêiner principal para centralizar e ocupar o espaço */
         display: flex;
         justify-content: center;
+        align-items: center;
         /* Centraliza o carrossel horizontalmente */
         flex-grow: 1;
         /* background-attachment: fixed; */
