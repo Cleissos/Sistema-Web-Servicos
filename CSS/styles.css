@@ -409,7 +409,7 @@ section {
         flex-grow: 1;
         /* background-attachment: fixed; */
         border: 2px  solid red;
-        height: 100vh;
+        height: 100%;
     }
 
     .slider {
