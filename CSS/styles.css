@@ -425,6 +425,7 @@ section {
         /* Remove a margem daqui para evitar conflitos*/
         margin: 0;
         height: 50%;
+        margin: auto 0;
     }
 
     .slide {
