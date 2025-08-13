@@ -407,7 +407,7 @@ section {
         /* Centraliza o carrossel horizontalmente */
         flex-grow: 1;
         align-items: center;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         border: 2px  solid red;
     }
 
