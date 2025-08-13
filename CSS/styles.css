@@ -408,14 +408,14 @@ section {
         flex-grow: 1;
         align-items: center;
         background-attachment: fixed;
-        align-items: center;
+        border: 2px  solid red;
     }
 
     .slider {
         /* Define a largura para 90% para que haja um espaço nas laterais */
         width: 100%;
-        height: 50%;
-        overflow: hidden;
+        height: 70%;
+        /* overflow: hidden; */
     }
 
     .slides {
