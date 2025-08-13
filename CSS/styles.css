@@ -406,7 +406,7 @@ section {
         justify-content: center;
         /* Centraliza o carrossel horizontalmente */
         flex-grow: 1;
-        align-items: center;
+        /* align-items: center; */
         background-attachment: fixed;
         border: 2px  solid red;
     }
