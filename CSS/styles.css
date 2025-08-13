@@ -402,11 +402,13 @@ section {
 
     .inicio {
         /* Define o contêiner principal para centralizar e ocupar o espaço */
-        /* display: flex; */
+        display: flex;
+        justify-content: center;
         /* Centraliza o carrossel horizontalmente */
         flex-grow: 1;
         /* background-attachment: fixed; */
         border: 2px  solid red;
+        max-height: 70%;
     }
 
     .slider {
